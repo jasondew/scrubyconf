@@ -42,7 +42,7 @@ production:
   environment: #{rails_env}
   servers: 1
   address: 127.0.0.1
-  chdir: #{release_path}
+  chdir: #{deploy_to}/current
   log: #{shared_path}/log/thin.log
   pid: #{shared_path}/pids/thin.pid
   timeout: 30

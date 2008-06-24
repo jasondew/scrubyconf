@@ -1,6 +1,6 @@
 require 'erb'
 
-set :application, "scruby"
+set :application, "scrubyconf"
 
 role :app, "amcates.net"
 role :web, "amcates.net"

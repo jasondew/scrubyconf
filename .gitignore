@@ -1,0 +1,11 @@
+db/*.sqlite3
+config/database.yml
+config/ferret_server.yml
+index/development
+coverage/*
+log/*.log
+tmp/**/*
+doc/app
+doc/api
+*.swp
+.DS_Store

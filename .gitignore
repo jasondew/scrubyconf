@@ -1,6 +1,6 @@
 db/*.sqlite3
+db/schema.rb
 config/database.yml
-config/ferret_server.yml
 index/development
 coverage/*
 log/*.log

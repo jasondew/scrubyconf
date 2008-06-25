@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :proposals
+
   map.sponsorship_levels '/sponsorship_levels', :controller => 'pages', :action => 'sponsorship_levels'
 
   map.root :controller => 'pages', :action => 'home'

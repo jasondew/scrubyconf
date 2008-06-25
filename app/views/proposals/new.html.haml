@@ -1,0 +1,12 @@
+%h3 Submit a proposal
+
+- form_for(@proposal) do |f|
+
+  = label "Name", f.text_field(:name)
+  = label "Email", f.text_field(:email)
+
+  = label "Title of your talk", f.text_field(:title)
+  = label "Duration", f.text_field(:duration)
+  = label "Details", f.text_area(:details)
+
+  %p= f.submit "Submit"

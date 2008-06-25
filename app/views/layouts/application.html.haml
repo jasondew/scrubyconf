@@ -7,32 +7,35 @@
     %title SC Ruby Conference 2008
     
   %body
-    #page
-      #content
-        #logo
-        #header
-          %h1 SC Ruby Conference 2008
+    #content
+      #logo
+      #header
+        %h1 SC Ruby Conference 2008
 
-        %ul#menu
-          %li= link_to "Home", root_path
-          |
-          %li= link_to "Sponsorship Levels", sponsorship_levels_path
-          |
-          %li= link_to "Propose a Talk"
+      %ul#menu
+        %li= link_to "Home", root_path
+        |
+        %li= link_to "Sponsorship Levels", sponsorship_levels_path
+        |
+        %li= link_to "Propose a Talk", new_proposal_path
 
-        #submenu
+      #submenu
+      
+      = content_tag(:p, flash[:notice], :id => "notices") if flash[:notice]
 
-        #inner_content= yield
+      #inner_content= yield
 
-        #panel
-          %h3 Latest News
+      #panel
+        %h3 Latest News
 
-          %ul#news
-            %li
-              %span.meta June 24th, 2008
-              %div.body Official website created.
-              = link_to "More..."
+        %ul#news
+          %li
+            %span.meta June 24th, 2008
+            %div.body Official website created.
+            = link_to "More..."
 
-        #footer
-          &copy; 2008
-          = link_to "ColaRuby", "http://colaruby.com/"
+      %br
+
+    #footer
+      &copy; 2008
+      = link_to "ColaRuby", "http://colaruby.com/"

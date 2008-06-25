@@ -1,3 +1,12 @@
-# Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+
+  def label *args, &block
+    label_text, content, *options = args
+    content = capture(&block) if block_given?
+
+    content_tag(:dl, *options) do
+      content_tag(:dt, content_tag(:label, "#{label_text}: ")) + content_tag(:dd, content.to_s || "")
+    end
+  end
+
 end

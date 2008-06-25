@@ -1,0 +1,38 @@
+!!!
+
+%html
+
+  %head
+    = stylesheet_link_tag 'application'
+    %title SC Ruby Conference 2008
+    
+  %body
+    #page
+      #content
+        #logo
+        #header
+          %h1 SC Ruby Conference 2008
+
+        %ul#menu
+          %li= link_to "Home"
+          |
+          %li= link_to "Sponsor Us"
+          |
+          %li= link_to "Propose a Talk"
+
+        #submenu
+
+        #inner_content= yield
+
+        #panel
+          %h3 Latest News
+
+          %ul#news
+            %li
+              %span.meta June 24th, 2008
+              %div.body Official website created.
+              = link_to "More..."
+
+        #footer
+          &copy; 2008
+          = link_to "ColaRuby", "http://colaruby.com/"

@@ -1,102 +1,104 @@
-/* CSS Document */
-
-/*PAGE LAYOUT*/
 body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
+  margin: 0;
+  font-family: tahoma, sans-serif; }
 
 h1 {
-  font-family: georgia;
-  font-size: 38px;
-  color: #333;
-}
+  font-family: georgia, serif;
+  font-size: 38px; }
 
-#logo{float:left; background-image:url(/images/ruby.png); width:274px; height:213px;}
-#topheader{float:right; width:526px; height:97px; background-color:#F0F0F0; position:relative}
-#toplinks{position:absolute; right:10px; top:10px;}
-#menu{float:right; width:526px; height:32px; background-image:url(/images/bg_menu.gif); background-repeat:repeat-x;}
-#submenu{float:right; width:526px; height:32px; background-image:url(/images/bg_submenu.gif); background-position:top; background-repeat:repeat-x;}
-#contenttext{float:right; width:526px;}
-#leftpanel{float:left; width:274px;}
-#footer{float:left; width:800px; background-color:#F0F0F0; padding:10px;}
+h2 {
+  font-family: tahoma, serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  color: #cc0000; }
 
-/*GRAY PANEL*/
-.graypanel{
-	border:solid 1px #666666; background-color:#F7F7F7; padding:10px; margin:10px;
-}
+h3 {
+  font-family: tahoma, serif;
+  margin: 0;
+  font-size: 20px;
+  color: #cc0000; }
 
-/*TEXT STYLES*/
-.bodytext {
-	font: 0.7em Tahoma, sans-serif;
-	color: #666666;
-}
+a {
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
-.titletext {
-	font: 0.7em Tahoma, sans-serif;
-	font-size:36px;
-	font-weight:bold;
-	color:#CC0000;
-}
-.whitetitle {
-	font: 0.7em Tahoma, sans-serif;
-	font-size:36px;
-	font-weight:bold;
-	color:#FFFFFF;
-}
-.smalltitle {
-	font: 0.7em Tahoma, sans-serif;
-	font-size:20px;
-	font-weight:bold;
-	color:#CC0000;
-}
-.smallwhitetext {
-	font: 0.7em Tahoma, sans-serif;
-	font-size: 11px;
-	font-weight:bold;
-	color: #FFFFFF;
-}
-.smallwhitetext a{
-	font: 0.7em Tahoma, sans-serif;
-	font-size: 11px;
-	font-weight:bold;
-	color: #FFFFFF;
-	text-decoration:none;
-}
-.smallwhitetext a:hover{
-	text-decoration:underline;
-}
-.smallgraytext {
-	font: 0.7em Tahoma, sans-serif;
-	font-size: 11px;
-	font-weight:bold;
-	color:#999999;
-}
-.smallgraytext a{
-	font: 0.7em Tahoma, sans-serif;
-	font-size: 11px;
-	font-weight:bold;
-	color:#999999;
-	text-decoration:none;
-}
-.smallgraytext a:hover{
-	text-decoration:underline;
-}
-.smallredtext {
-	font: 0.7em Tahoma, sans-serif;
-	font-size: 11px;
-	font-weight:bold;
-	color:#CC0000;
-}
-.smallredtext a{
-	font: 0.7em Tahoma, sans-serif;
-	font-size: 11px;
-	font-weight:bold;
-	color:#CC0000;
-	text-decoration:none;
-}
-.smallredtext a:hover{
-	text-decoration:underline;
-}
+#page {
+  text-align: center; }
+
+#content {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left; }
+
+#logo {
+  float: left;
+  background: url(/images/ruby.png);
+  width: 274px;
+  height: 213px; }
+
+#header {
+  float: right;
+  width: 526px;
+  height: 97px;
+  background: #f0f0f0;
+  position: relative; }
+
+#menu {
+  float: right;
+  width: 526px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  background: url(/images/bg_menu.gif) repeat-x;
+  text-align: right; }
+  #menu li {
+    display: inline;
+    padding: 0 6px; }
+    #menu li a {
+      font-size: 16px;
+      font-weight: bold;
+      color: white; }
+
+#submenu {
+  float: right;
+  width: 526px;
+  height: 32px;
+  background: url(/images/bg_submenu.gif) top left repeat-x; }
+
+#inner_content {
+  float: right;
+  width: 526px;
+  color: #666666;
+  font-size: 12px; }
+
+#panel {
+  float: left;
+  width: 240px;
+  margin-top: 10px;
+  background: #f7f7f7;
+  border: 1px solid #666666;
+  padding: 8px; }
+  #panel #news {
+    margin: 8px 0;
+    list-style: none;
+    padding: 0;
+    font-size: 12px; }
+    #panel #news .meta {
+      color: #cc0000; }
+    #panel #news a {
+      color: #999999; }
+
+#footer {
+  float: left;
+  width: 800px;
+  background: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999; }
+  #footer a {
+    color: #999999; }

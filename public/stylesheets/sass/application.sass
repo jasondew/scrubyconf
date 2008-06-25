@@ -1,0 +1,117 @@
+!offwhite = #F0F0F0
+!red = #C00
+!gray = #666
+!medium_gray = #999
+!light_gray = #F7F7F7
+
+body
+  :margin  0
+  :font-family tahoma, sans-serif
+
+h1
+  :font-family georgia, serif
+  :font-size 38px
+
+h2
+  :font-family tahoma, serif
+  :font-size 36px
+  :text-align center
+  :margin-top 0
+  :color = !red
+
+h3
+  :font-family tahoma, serif
+  :margin 0
+  :font-size 20px
+  :color = !red
+
+a
+  :font-weight bold
+  :text-decoration none
+
+  &:hover
+    :text-decoration underline
+
+#page
+  :text-align center
+
+#content
+  :width 800px
+  :margin 0 auto
+  :text-align left
+
+#logo
+  :float left
+  :background url(/images/ruby.png)
+  :width 274px
+  :height 213px
+
+#header
+  :float  right
+  :width 526px
+  :height 97px
+  :background = !offwhite
+  :position relative
+
+#menu
+  :float right
+  :width 526px
+  :height 32px
+  :margin 0
+  :padding 0
+  :background url(/images/bg_menu.gif) repeat-x
+  :text-align right
+
+  li
+    :display inline
+    :padding 0 6px
+
+    a
+      :font-size 16px
+      :font-weight bold
+      :color white
+
+#submenu
+  :float right
+  :width 526px
+  :height 32px
+  :background url(/images/bg_submenu.gif) top left repeat-x
+
+#inner_content
+  :float right
+  :width 526px
+  :color = !gray
+  :font-size 12px
+
+#panel
+  :float left
+  :width 240px
+  :margin-top 10px
+  :background = !light_gray
+  :border = 1px solid !gray
+  :padding 8px
+
+  #news
+    :margin 8px 0
+    :list-style none
+    :padding 0
+    :font-size 12px
+
+    .meta
+      :color = !red
+
+    a
+      :color = !medium_gray
+
+#footer
+  :float left
+  :width 800px
+  :background = !offwhite
+  :padding 10px
+  :text-align center
+  :font-size 12px
+  :font-weight bold
+  :color = !medium_gray
+
+  a
+    :color = !medium_gray

@@ -64,7 +64,6 @@ br {
   text-align: right; }
   #menu li {
     display: inline;
-    display: none;
     padding: 0 6px; }
     #menu li a {
       font-size: 12px;
@@ -102,8 +101,7 @@ p#notices {
   margin: 10px;
   background: #f7f7f7;
   border: 1px solid #666666;
-  padding: 8px;
-  display: none; }
+  padding: 8px; }
   #panel #sponsors {
     margin: 8px 0;
     list-style: none;

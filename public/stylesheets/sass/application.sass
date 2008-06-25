@@ -29,6 +29,10 @@ h3
   :font-size 18px
   :color = !red
 
+  span
+    :font-size 10px
+    :color = !gray
+
 a
   :font-weight bold
   :text-decoration none
@@ -101,7 +105,7 @@ p#notices
   :float right
   :width 515px
   :padding-right 10px
-  :color = !gray
+  :color = !dark_gray
   :font-size 12px
 
 #panel
@@ -112,17 +116,15 @@ p#notices
   :border = 1px solid !gray
   :padding 8px
 
-  #news
+  #sponsors
     :margin 8px 0
     :list-style none
     :padding 0
     :font-size 12px
 
-    .meta
-      :color = !red
-
-    a
-      :color = !medium_gray
+    a img
+      :border none
+      :padding 4px
 
 dl
   dt
@@ -130,9 +132,8 @@ dl
     :width 110px
     :font-weight bold
 
-  dd
-    input
-      :background = !light_green
+  dd input
+    :background = !light_green
 
     textarea
       :background = !light_green

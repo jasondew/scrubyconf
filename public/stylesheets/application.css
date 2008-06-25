@@ -20,6 +20,9 @@ h3 {
   margin: 0;
   font-size: 18px;
   color: #cc0000; }
+  h3 span {
+    font-size: 10px;
+    color: #666666; }
 
 a {
   font-weight: bold;
@@ -61,6 +64,7 @@ br {
   text-align: right; }
   #menu li {
     display: inline;
+    display: none;
     padding: 0 6px; }
     #menu li a {
       font-size: 12px;
@@ -89,7 +93,7 @@ p#notices {
   float: right;
   width: 515px;
   padding-right: 10px;
-  color: #666666;
+  color: #333333;
   font-size: 12px; }
 
 #panel {
@@ -98,16 +102,16 @@ p#notices {
   margin: 10px;
   background: #f7f7f7;
   border: 1px solid #666666;
-  padding: 8px; }
-  #panel #news {
+  padding: 8px;
+  display: none; }
+  #panel #sponsors {
     margin: 8px 0;
     list-style: none;
     padding: 0;
     font-size: 12px; }
-    #panel #news .meta {
-      color: #cc0000; }
-    #panel #news a {
-      color: #999999; }
+    #panel #sponsors a img {
+      border: none;
+      padding: 4px; }
 
 dl dt {
   float: left;
@@ -115,10 +119,10 @@ dl dt {
   font-weight: bold; }
 dl dd input {
   background: #bfffbf; }
-dl dd textarea {
-  background: #bfffbf;
-  width: 400px;
-  height: 100px; }
+  dl dd input textarea {
+    background: #bfffbf;
+    width: 400px;
+    height: 100px; }
 
 form p {
   text-align: center; }

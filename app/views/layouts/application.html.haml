@@ -3,7 +3,7 @@
 %html
 
   %head
-    = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'application', :media => :all
     %title SC Ruby Conference 2008
     
   %body
@@ -26,13 +26,8 @@
       #inner_content= yield
 
       #panel
-        %h3 Latest News
-
-        %ul#news
-          %li
-            %span.meta June 24th, 2008
-            %div.body Official website created.
-            = link_to "More..."
+        %h3 Sponsors
+        #sponsors= render :partial => 'pages/sponsors'
 
       %br
 

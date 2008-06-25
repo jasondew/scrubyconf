@@ -117,10 +117,10 @@ dl dt {
   font-weight: bold; }
 dl dd input {
   background: #bfffbf; }
-  dl dd input textarea {
-    background: #bfffbf;
-    width: 400px;
-    height: 100px; }
+dl dd textarea {
+  background: #bfffbf;
+  width: 400px;
+  height: 100px; }
 
 form p {
   text-align: center; }

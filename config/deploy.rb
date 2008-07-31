@@ -12,7 +12,7 @@ set :app_port, "8008"
 set :rails_env, "production"
 
 set :scm, :git
-set :repository, "git@github-scruby:amcates/scruby.git"
+set :repository, "git@scrubyconf:jasondew/scrubyconf.git"
 
 desc "Make sure groups and permissions are set correctly"
 task :after_setup do

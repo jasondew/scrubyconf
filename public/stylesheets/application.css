@@ -41,9 +41,9 @@ br {
 
 #logo {
   float: left;
-  background: url(/images/ruby.png);
+  background: url(/images/logo.png);
   width: 274px;
-  height: 213px; }
+  height: 290px; }
 
 #header {
   float: right;
@@ -106,7 +106,8 @@ p#notices {
     margin: 8px 0;
     list-style: none;
     padding: 0;
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: center; }
     #panel #sponsors a img {
       border: none;
       padding: 4px; }

@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :proposals
+  map.resources :proposals, :collection => { :list => :get }
 
   map.sponsorship_levels '/sponsorship_levels', :controller => 'pages', :action => 'sponsorship_levels'
 

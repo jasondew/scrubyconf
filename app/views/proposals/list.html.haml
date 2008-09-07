@@ -1,0 +1,7 @@
+%h1 Proposals to date
+
+%ul
+  - @proposals.each do |proposal|
+    %li
+      .title= proposal.title
+      .details= proposal.details

@@ -18,6 +18,10 @@ class ProposalsController < ApplicationController
     end
   end
 
+  def list
+    @proposals = Proposal.all
+  end
+
   private
 
   def verify_human

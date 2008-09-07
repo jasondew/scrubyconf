@@ -3,5 +3,6 @@
 %ul
   - @proposals.each do |proposal|
     %li
-      .title= proposal.title
+      %h3= proposal.title
       .details= proposal.details
+      .duration= proposal.duration

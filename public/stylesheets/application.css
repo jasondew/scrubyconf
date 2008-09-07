@@ -138,3 +138,7 @@ form p {
   color: #f7f7f7; }
   #footer a {
     color: #f7f7f7; }
+
+.duration {
+  font-size: 90%;
+  font-weight: bold; }

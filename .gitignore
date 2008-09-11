@@ -10,3 +10,4 @@ doc/app
 doc/api
 *.swp
 .DS_Store
+Thumbs.db

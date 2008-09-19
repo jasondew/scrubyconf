@@ -25,7 +25,10 @@ h3 {
 
 a {
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #cc0000; }
+  a:link, a:visited, a:hover, a:active {
+    color: #cc0000; }
   a:hover {
     text-decoration: underline; }
 
@@ -114,16 +117,35 @@ p#notices {
       border: none;
       padding: 4px; }
 
-dl dt {
+dl.form dt {
   float: left;
   width: 110px;
   font-weight: bold; }
-dl dd input {
+dl.form dd input {
   background: #bfffbf; }
-dl dd textarea {
+dl.form dd textarea {
   background: #bfffbf;
   width: 400px;
   height: 100px; }
+
+dl#agenda dt {
+  margin: 0;
+  padding: 0;
+  font-size: 75%;
+  font-weight: bold;
+  float: left;
+  width: 60px;
+  height: 40px;
+  text-align: right;
+  padding-right: 5px;
+  clear: left; }
+dl#agenda dd {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 450px;
+  height: 40px;
+  font-size: 14px; }
 
 form p {
   text-align: center; }
